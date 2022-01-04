@@ -1,3 +1,4 @@
 FROM mltooling/ml-workspace:0.13.2
-CMD conda install -y spyder
+RUN conda install -y spyder
+
 
