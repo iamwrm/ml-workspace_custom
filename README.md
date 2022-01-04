@@ -10,3 +10,11 @@ Use github action
 - install spyder
 - upload to github docker registry
 
+
+Check if spyder can be opened after these requirements
+```
+spyder
+conda install pyopengl
+conda install qt=5.6* pyqt=5.6*
+conda install pyopengl
+```
