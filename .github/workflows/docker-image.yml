@@ -28,7 +28,7 @@ jobs:
 
     - name: Docker build
       run: |
-        docker build . --file Dockerfile --tag ml_workspace_custom
+        docker build . --file Dockerfile --tag ${{ env.IMAGE_REPO }}/${{ env.IMAGE_NAME }}:latest
 
     - name: Push docker image
       run: |
