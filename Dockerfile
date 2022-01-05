@@ -1,5 +1,5 @@
 FROM mltooling/ml-workspace:0.13.2
-RUN conda install -y spyder pyopengl qt pyqt
+RUN conda install -y spyder pyopengl qt pyqt pyqtwebengine
 
 
 ENTRYPOINT ["/tini", "-g", "--"]
