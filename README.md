@@ -6,10 +6,9 @@
 - install spyder, docker build
 - upload to github docker registry
 
+The following does make conda work.
+```
+conda install -y spyder=5.1.5 qt=5.9.7 pyqt=5.9.2
+```
 
-Check if spyder can be opened after these requirements
-```
-conda install pyopengl
-conda install qt=5.6* pyqt=5.6*
-spyder
-```
+Feel free to checkout the package page and pull repo:image:spyder5 
