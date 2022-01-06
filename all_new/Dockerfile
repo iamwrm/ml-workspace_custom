@@ -3,7 +3,7 @@ ENV \
     CONDA_ROOT=/opt/conda
 
 RUN \
-    $CONDA_ROOT/bin/conda install -y spyder pyopengl qt pyqt pyqtwebengine && \
+    $CONDA_ROOT/bin/conda install -y spyder=5.1.5 qt=5.9.7 pyqt=5.9.2 && \
     $CONDA_ROOT/bin/conda clean -y --packages && \
     $CONDA_ROOT/bin/conda clean -y -a -f  && \
     $CONDA_ROOT/bin/conda build purge-all && \
