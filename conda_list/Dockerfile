@@ -6,7 +6,7 @@ ENV \
     CONDA_ROOT=/opt/conda
 
 RUN \
-    $CONDA_ROOT/bin/conda conda create --name spyder5_env --file requirements.txt && \
+    $CONDA_ROOT/bin/conda create --name spyder5_env --file requirements.txt && \
     $CONDA_ROOT/bin/conda clean -y --packages && \
     $CONDA_ROOT/bin/conda clean -y -a -f  && \
     $CONDA_ROOT/bin/conda build purge-all && \
