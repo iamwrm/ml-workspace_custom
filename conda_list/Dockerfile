@@ -1,6 +1,6 @@
 FROM mltooling/ml-workspace:0.13.2
 
-ADD ../requirements.txt .
+ADD ./requirements.txt .
 
 ENV \
     CONDA_ROOT=/opt/conda
